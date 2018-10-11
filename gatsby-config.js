@@ -1,6 +1,25 @@
 const path = require(`path`)
 
 module.exports = {
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projectImages`,
+        path: path.join(__dirname, `src`, `images`, `projects`),
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `openSourceImages`,
+        path: path.join(__dirname, `src`, `images`, `open-source`),
+      }
+    }
+  ],
   siteMetadata: {
     title: 'Kevin Brewer - Software Engineer',
     description: "Kevin Brewer's portfolio website",
@@ -86,24 +105,5 @@ module.exports = {
         }
       ]
     }
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projectImages`,
-        path: path.join(__dirname, `src`, `images`, `projects`),
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `openSourceImages`,
-        path: path.join(__dirname, `src`, `images`, `open-source`),
-      }
-    }
-  ]
+  }
 }

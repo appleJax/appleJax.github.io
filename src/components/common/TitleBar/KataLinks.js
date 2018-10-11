@@ -3,9 +3,9 @@ import { withStyles } from '@material-ui/core/styles'
 import Classes from '../../../styles/classes'
 import Colors from '../../../styles/colors'
 import SocialLink from '../SocialLink'
-import CodeWarsIcon from '../../icons/CodeWarsIcon'
-import HackerRankIcon from '../../icons/HackerRankIcon'
-import ExercismIcon from '../../icons/ExercismIcon'
+import CodeWarsIcon from '../icons/CodeWarsIcon'
+import HackerRankIcon from '../icons/HackerRankIcon'
+import ExercismIcon from '../icons/ExercismIcon'
 import Typography from '@material-ui/core/Typography'
 
 const KataLinks = ({ classes }) =>
