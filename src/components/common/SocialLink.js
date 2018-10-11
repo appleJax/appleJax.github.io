@@ -25,7 +25,10 @@ const styles = (theme) => ({
     padding: '0 8px',
     textDecoration: 'none',
     '&:hover': {
-      color: theme.palette.primary.light
+      color: theme.palette.primary.light,
+      '& svg, g, path': {
+        fill: theme.palette.primary.light
+      }
     }
   },
   grey: {

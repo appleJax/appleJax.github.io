@@ -3,12 +3,6 @@ import classNames from 'classnames'
 import { withStyles } from '@material-ui/core/styles'
 import { Link } from 'gatsby'
 
-const styles = (theme) => ({
-  link: {
-    textDecoration: 'none'
-  }
-})
-
 const CustomLink = ({
   children,
   classes,
@@ -24,5 +18,11 @@ const CustomLink = ({
   >
     {children}
   </Link>
+
+const styles = (theme) => ({
+  link: {
+    textDecoration: 'none'
+  }
+})
 
 export default withStyles(styles)(CustomLink)

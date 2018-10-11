@@ -2,7 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Colors from '../../styles/colors'
 import Classes from '../../styles/classes'
-import SocialLink from '../common/SocialLink'
+import SocialLink from './SocialLink'
 
 const Footer = ({ classes }) =>
   <div className={classes.container}>
@@ -11,17 +11,17 @@ const Footer = ({ classes }) =>
     </p>
     <SocialLink
       to='https://github.com/appleJax'
-      className='fa fa-github'
+      className='fab fa-github'
       footer
     />
     <SocialLink
       to='https://www.linkedin.com/in/kevin-brewer-profile'
-      className='fa fa-linkedin'
+      className='fab fa-linkedin'
       footer
     />
     <SocialLink
       to='mailto:kevnbrewer@gmail.com'
-      className='fa fa-envelope'
+      className='fas fa-envelope'
       footer
     />
   </div>
@@ -33,6 +33,7 @@ const styles = (theme) => ({
     color: '#888',
     background: Colors.secondary.night,
     height: '60px',
+    marginTop: '20px',
     width: '100vw'
   },
   copyright: {

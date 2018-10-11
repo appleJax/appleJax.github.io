@@ -26,10 +26,7 @@ const CodeWarsIcon = ({ classes }) =>
 
 const styles = (theme) => ({
   icon: {
-    fill: theme.palette.primary.main,
-    '&:hover': {
-      fill: theme.palette.primary.light
-    }
+    fill: theme.palette.primary.main
   }
 })
 

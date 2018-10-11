@@ -5,7 +5,7 @@ import Colors from '../../../styles/colors'
 import Typography from '@material-ui/core/Typography'
 import myPhoto from '../../../images/me.jpeg'
 
-const Logo = ({ classes }) =>
+const Headshot = ({ classes }) =>
   <div className={classes.container}>
     <img
       alt='Me'
@@ -13,8 +13,12 @@ const Logo = ({ classes }) =>
       src={myPhoto}
     />
     <div className={classes.title}>
-      <Typography variant='title'>Kevin Brewer</Typography>
-      <Typography variant='body1'>Software Engineer</Typography>
+      <Typography className={classes.titleLine} variant='title'>
+        Kevin Brewer
+      </Typography>
+      <Typography className={classes.titleLine} variant='body1'>
+        Software Engineer
+      </Typography>
     </div>
   </div>
 
@@ -22,7 +26,13 @@ const styles = (theme) => ({
   container: {
     ...Classes.flexRow,
     justifyContent: 'flex-start',
-    width: '33%'
+    width: '33%',
+    [theme.breakpoints.down('sm')]: {
+      width: '50%'
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '100%'
+    }
   },
   photo: {
     borderRadius: '50%',
@@ -33,7 +43,10 @@ const styles = (theme) => ({
     ...Classes.flexColumn,
     color: Colors.primary.night,
     textShadow: `1px 1px 1px rgba(255, 255, 255, 0.2)`
+  },
+  titleLine: {
+    textAlign: 'center'
   }
 })
 
-export default withStyles(styles)(Logo)
+export default withStyles(styles)(Headshot)

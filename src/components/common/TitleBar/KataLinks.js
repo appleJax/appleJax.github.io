@@ -2,7 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Classes from '../../../styles/classes'
 import Colors from '../../../styles/colors'
-import SocialLink from '../../common/SocialLink'
+import SocialLink from '../SocialLink'
 import CodeWarsIcon from '../../icons/CodeWarsIcon'
 import HackerRankIcon from '../../icons/HackerRankIcon'
 import ExercismIcon from '../../icons/ExercismIcon'
@@ -15,7 +15,7 @@ const KataLinks = ({ classes }) =>
         to='https://codepen.io/appleJax'
         title
       >
-        <i className='fa fa-2x fa-codepen' />
+        <i className='fab fa-2x fa-codepen' />
       </SocialLink>
       <SocialLink
         to='https://www.codewars.com/users/appleJax'
@@ -55,6 +55,7 @@ const styles = (theme) => ({
     marginTop: '10px',
     padding: '5px',
     opacity: '0.8',
+    textAlign: 'center',
     textShadow: '1px 1px rgba(255, 255, 255, 0.1)'
   },
   innerContainer: {
@@ -64,7 +65,13 @@ const styles = (theme) => ({
   outerContainer: {
     ...Classes.flexColumn,
     alignItems: 'center',
-    width: '33%'
+    width: '33%',
+    [theme.breakpoints.down('sm')]: {
+      width: '50%'
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '100%'
+    }
   }
 })
 

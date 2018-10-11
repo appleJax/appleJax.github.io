@@ -1,10 +1,15 @@
 import React from 'react'
+import Layout from '../components/Layout'
+import NotFoundHeader from '../components/404/NotFoundHeader'
+import NotFoundMessage from '../components/404/NotFoundMessage'
+import RouteLinks from '../components/404/RouteLinks'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  <Layout>
+    <NotFoundHeader />
+    <NotFoundMessage />
+    <RouteLinks />
+  </Layout>
 )
 
 export default NotFoundPage

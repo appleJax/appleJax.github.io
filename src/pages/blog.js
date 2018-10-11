@@ -1,16 +1,16 @@
 import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
+import BlogHeader from '../components/blog/BlogHeader'
+import UnderConstruction from '../components/blog/UnderConstruction'
+import ButtonLink from '../components/common/ButtonLink'
 
-const styles = (theme) => ({
-
-})
-
-const BlogPage = ({ classes }) =>
+const BlogPage = () =>
   <Layout>
-    <p>
-      My Blog
-    </p>
+    <BlogHeader />
+    <UnderConstruction />
+    <ButtonLink to='/'>
+      Home
+    </ButtonLink>
   </Layout>
 
-export default withStyles(styles)(BlogPage)
+export default BlogPage

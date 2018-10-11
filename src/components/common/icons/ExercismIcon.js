@@ -32,9 +32,6 @@ const styles = (theme) => ({
   icon: {
     '& path': {
       fill: theme.palette.primary.main,
-    },
-    '&:hover path': {
-      fill: theme.palette.primary.light
     }
   }
 })

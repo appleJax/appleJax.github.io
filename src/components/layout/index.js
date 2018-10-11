@@ -18,12 +18,14 @@ const Content = ({ children, site }) =>
           href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500'
         },
         {
-         rel: 'stylesheet',
-         href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+          rel: 'stylesheet',
+          href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.`
         },
         {
           rel: 'stylesheet',
-          href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.`
+          href: 'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
+          integrity: 'sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU',
+          crossorigin: 'anonymous'
         }
       ]}
     />
