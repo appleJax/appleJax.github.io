@@ -61,8 +61,11 @@ const styles = (theme) => ({
   container: {
     ...Classes.flexColumn,
     alignItems: 'center',
-    marginTop: '15px',
-    maxWidth: '100vw'
+    margin: '25px 10px 0',
+    maxWidth: '100vw',
+    [theme.breakpoints.down('xs')]: {
+      margin: '35px 0',
+    }
   },
   head: {
     color: theme.palette.secondary.main,

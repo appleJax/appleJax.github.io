@@ -17,12 +17,13 @@ const styles = (theme) => ({
     borderLeft: 'none',
     borderRight: 'none',
     color: theme.palette.secondary.main,
+    fontSize: '2.5em',
     margin: '80px 0 30px',
     opacity: '0.9',
     padding: '10px 15px',
     textShadow: `1px 1px 2px ${Colors.secondary.highlight}`,
     [theme.breakpoints.down('sm')]: {
-      margin: '30px 0 10px'
+      margin: '50px 0 20px'
     }
   }
 })
