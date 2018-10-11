@@ -19,7 +19,7 @@ const IndexPage = ({
 }) => (
   <>
     <div id='top' />
-    <Layout>
+    <Layout classPrefix='h'>
       <Header />
       <AboutMe />
       <Projects screenshots={projectImages} projects={section.projects} />

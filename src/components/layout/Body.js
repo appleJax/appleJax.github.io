@@ -8,16 +8,27 @@ import Colors from '../../styles/colors'
 import Spacer from '../common/Spacer'
 import Footer from '../common/Footer'
 
-const Body = ({ children, classes }) =>
-  <MuiThemeProvider theme={theme}>
-    <CssBaseline />
-    <div className={classes.container}>
-      {children}
-      <Spacer />
-      <Footer />
-    </div>
-  </MuiThemeProvider>
+import JssProvider from 'react-jss/lib/JssProvider'
+import { createGenerateClassName } from '@material-ui/core/styles'
 
+const Body = ({ children, classes, classPrefix }) => {
+  const generateClassName = createGenerateClassName({
+    productionPrefix: classPrefix,
+  });
+
+  return (
+    <JssProvider generateClassName={generateClassName}>
+      <MuiThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className={classes.container}>
+          {children}
+          <Spacer />
+          <Footer />
+        </div>
+      </MuiThemeProvider>
+    </JssProvider>
+  )
+}
 const styles = () => ({
   container: {
     ...Classes.flexColumn,

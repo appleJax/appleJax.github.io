@@ -5,7 +5,7 @@ import NotFoundMessage from '../components/404/NotFoundMessage'
 import RouteLinks from '../components/404/RouteLinks'
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout classPrefix='n'>
     <NotFoundHeader />
     <NotFoundMessage />
     <RouteLinks />

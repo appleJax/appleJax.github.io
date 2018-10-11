@@ -5,7 +5,7 @@ import UnderConstruction from '../components/blog/UnderConstruction'
 import ButtonLink from '../components/common/ButtonLink'
 
 const BlogPage = () =>
-  <Layout>
+  <Layout classPrefix='b'>
     <BlogHeader />
     <UnderConstruction />
     <ButtonLink to='/'>
