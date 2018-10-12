@@ -10,7 +10,6 @@
     "classnames": "^2.2.6",
     "gatsby": "next",
     "gatsby-image": "^2.0.13",
-    "gatsby-plugin-jss": "^2.0.2",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-source-filesystem": "^2.0.2",
@@ -19,8 +18,7 @@
     "react": "^16.4.2",
     "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-dom": "16.4.2",
-    "react-helmet": "^5.2.0",
-    "react-jss": "^8.6.1"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby",

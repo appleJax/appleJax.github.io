@@ -6,7 +6,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `@wapps/gatsby-plugin-material-ui`,
-    `gatsby-plugin-jss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
