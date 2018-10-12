@@ -1,4 +1,6 @@
 import React from 'react'
+import JssProvider from 'react-jss/lib/JssProvider'
+import { createGenerateClassName } from '@material-ui/core/styles'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import { withStyles } from '@material-ui/core/styles'
 import theme from '../../styles/theme'
@@ -8,13 +10,10 @@ import Colors from '../../styles/colors'
 import Spacer from '../common/Spacer'
 import Footer from '../common/Footer'
 
-import JssProvider from 'react-jss/lib/JssProvider'
-import { createGenerateClassName } from '@material-ui/core/styles'
-
 const Body = ({ children, classes, classPrefix }) => {
   const generateClassName = createGenerateClassName({
-    productionPrefix: classPrefix,
-  });
+    productionPrefix: classPrefix
+  })
 
   return (
     <JssProvider generateClassName={generateClassName}>
