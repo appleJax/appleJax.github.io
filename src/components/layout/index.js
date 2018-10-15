@@ -13,7 +13,9 @@ const Layout = ({ children, classPrefix }) => {
           { property: 'og:title', content: 'Kevin Brewer - Software Engineer' },
           { property: 'og:description', content: `Kevin Brewer's Online Portfolio` },
           { property: 'og:url', content: 'https://applejax.github.io' },
-          { property: 'og:image', content: 'https://www.dropbox.com/s/tk5j042s6b9wqde/githubPages.png?dl=0' },
+          { property: 'og:image', content: 'https://res.cloudinary.com/kbrew/image/upload/v1539638048/screenshots/githubPages.png' },
+          { property: 'og:image:alt', content: 'My Portfolio Screenshot' },
+          { property: 'og:image:type', content: 'image/png' },
           { name: 'description', content: site.description },
           { name: 'keywords', content: site.keywords },
         ]}
