@@ -10,6 +10,10 @@ const Layout = ({ children, classPrefix }) => {
       <Helmet
         title={site.title}
         meta={[
+          { property: 'og:title', content: 'Kevin Brewer - Software Engineer' },
+          { property: 'og:description', content: `Kevin Brewer's Online Portfolio` },
+          { property: 'og:url', content: 'https://applejax.github.io' },
+          { property: 'og:image', content: 'https://www.dropbox.com/s/tk5j042s6b9wqde/githubPages.png?dl=0' },
           { name: 'description', content: site.description },
           { name: 'keywords', content: site.keywords },
         ]}
