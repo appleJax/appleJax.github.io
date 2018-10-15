@@ -48,6 +48,16 @@ const styles = (theme) => ({
     margin: '20px 0',
     maxWidth: '500px'
   },
+  description: {
+    color: theme.palette.secondary.main,
+    font: '1.3em Roboto',
+    margin: '10px 0'
+  },
+  descriptionBg: {
+    background: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: '5px',
+    padding: '10px 20px'
+  },
   hireMe: {
     background: theme.palette.secondary.light,
     borderRadius: '10px',
@@ -62,24 +72,14 @@ const styles = (theme) => ({
       opacity: '0.9'
     }
   },
-  keyboard: {
-    marginRight: '10px'
-  },
   intro: {
     color: theme.palette.secondary.main,
     font: 'bold 4em Carter One, cursive',
     textAlign: 'center',
     textShadow: `2px 2px 4px ${Colors.secondary.highlight}`
   },
-  description: {
-    color: theme.palette.secondary.main,
-    font: '1.3em Roboto',
-    margin: '10px 0'
-  },
-  descriptionBg: {
-    background: 'rgba(255, 255, 255, 0.1)',
-    borderRadius: '5px',
-    padding: '10px 20px'
+  keyboard: {
+    marginRight: '10px'
   }
 })
 
