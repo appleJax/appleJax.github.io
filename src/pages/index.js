@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import Header from '../components/home/Header'
 import AboutMe from '../components/home/AboutMe'
@@ -19,7 +20,7 @@ const IndexPage = ({
 }) => (
   <>
     <div id='top' />
-    <Layout classPrefix='h'>
+    <Layout>
       <Header />
       <AboutMe />
       <Projects screenshots={projectImages} projects={section.projects} />
@@ -67,4 +68,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default withRoot(IndexPage)

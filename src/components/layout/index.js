@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Body from './Body'
 
-const Layout = ({ children, classPrefix }) => {
+const Layout = ({ children }) => {
   const Content = ({ site }) => 
     <>
       <Helmet
@@ -36,7 +36,7 @@ const Layout = ({ children, classPrefix }) => {
           }
         ]}
       />
-      <Body classPrefix={classPrefix}>
+      <Body>
         {children}
       </Body>
     </>

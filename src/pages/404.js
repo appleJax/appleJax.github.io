@@ -1,15 +1,16 @@
 import React from 'react'
+import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import NotFoundHeader from '../components/404/NotFoundHeader'
 import NotFoundMessage from '../components/404/NotFoundMessage'
 import RouteLinks from '../components/404/RouteLinks'
 
 const NotFoundPage = () => (
-  <Layout classPrefix='n'>
+  <Layout>
     <NotFoundHeader />
     <NotFoundMessage />
     <RouteLinks />
   </Layout>
 )
 
-export default NotFoundPage
+export default withRoot(NotFoundPage)

@@ -1,11 +1,12 @@
 import React from 'react'
+import withRoot from '../utils/withRoot'
 import Layout from '../components/Layout'
 import BlogHeader from '../components/blog/BlogHeader'
 import UnderConstruction from '../components/blog/UnderConstruction'
 import ButtonLink from '../components/common/ButtonLink'
 
 const BlogPage = () =>
-  <Layout classPrefix='b'>
+  <Layout>
     <BlogHeader />
     <UnderConstruction />
     <ButtonLink to='/'>
@@ -13,4 +14,4 @@ const BlogPage = () =>
     </ButtonLink>
   </Layout>
 
-export default BlogPage
+export default withRoot(BlogPage)
