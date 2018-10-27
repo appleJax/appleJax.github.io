@@ -26,7 +26,7 @@ const Layout = ({ children, classPrefix }) => {
           },
           {
             rel: 'stylesheet',
-            href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.`
+            href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.brwLog`
           },
           {
             rel: 'stylesheet',

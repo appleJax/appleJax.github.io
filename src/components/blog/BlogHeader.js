@@ -7,7 +7,7 @@ const BlogHeader = ({ classes }) =>
   <div>
     <div className={classes.headerBar}>
       <Typography className={classes.title} variant='title'>
-        {`<Insert Catchy Blog Title>`}
+        brewLog
       </Typography>
     </div>
   </div>
@@ -17,13 +17,13 @@ const styles = (theme) => ({
     alignItems: 'center',
     background: Colors.primary.night,
     display: 'flex',
-    justifyContent: 'center',
     padding: '10px',
     width: '100vw',
     zIndex: '2'
   },
   title: {
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    fontFamily: 'Carter One'
   }
 })
 
