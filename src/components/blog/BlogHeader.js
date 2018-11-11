@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 const BlogHeader = ({ classes }) =>
   <div>
     <div className={classes.headerBar}>
-      <Typography className={classes.title} variant='title'>
+      <Typography className={classes.title} variant='h6'>
         brewLog
       </Typography>
     </div>

@@ -41,6 +41,19 @@ module.exports = {
         },
         {
           header: {
+            name: 'Pawn Shopify',
+            description: 'Marketplace for Used Goods'
+          },
+          image: {
+            alt: 'Pawn Shopify Screenshot'
+          },
+          links: {
+            live: 'https://pawn-shopify.netlify.com',
+            github: 'https://github.com/applejax/pawn-shopify'
+          }
+        },
+        {
+          header: {
             name: 'The Jam',
             description: 'Recipe Archive'
           },
@@ -77,6 +90,18 @@ module.exports = {
           },
           links: {
             github: 'https://github.com/trekhleb/javascript-algorithms'
+          }
+        },
+        {
+          header: {
+            name: 'Discord.js Guide',
+            description: 'Getting Started Guide for Discord.js'
+          },
+          image: {
+            alt: 'Discord.js Guide README.md'
+          },
+          links: {
+            github: 'https://github.com/discordjs/guide'
           }
         },
         {

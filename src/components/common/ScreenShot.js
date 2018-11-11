@@ -8,7 +8,7 @@ import Typography from '@material-ui/core/Typography'
 function Screenshot({ info, classes }) {
   const Header = ({ header }) =>
     <div className={classes.header}>
-      <Typography className={classes.head} variant='title'>
+      <Typography className={classes.head} variant='h6'>
         {header.name}
       </Typography>
       <Typography className={classes.head} variant='body1'>
@@ -61,6 +61,7 @@ const styles = (theme) => ({
   container: {
     ...Classes.flexColumn,
     alignItems: 'center',
+    boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.3)',
     margin: '25px 10px 0',
     maxWidth: '100vw',
     [theme.breakpoints.down('xs')]: {

@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 
 const ButtonLink = ({ classes, children, to }) =>
   <Link className={classes.link} to={to}>
-    <Typography className={classes.label} variant='title'>
+    <Typography className={classes.label} variant='h6'>
       {children}
     </Typography>
   </Link>

@@ -6,10 +6,10 @@ import Typography from '@material-ui/core/Typography'
 
 const NotFoundMessage = ({ classes }) =>
   <div className={classes.container}>
-    <Typography variant='title' className={classes.main}>
+    <Typography variant='h6' className={classes.main}>
       404
     </Typography>
-    <Typography variant='headline' className={classes.msg}>
+    <Typography variant='h5' className={classes.msg}>
       Sorry, that route doesn't exist.
     </Typography>
   </div>

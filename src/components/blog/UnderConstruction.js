@@ -9,7 +9,7 @@ const UnderConstruction = ({ classes }) =>
   <div className={classes.sign}>
     <div className={classes.blackLine}>
       <div className={classes.content}>
-        <Typography variant='title' className={classes.label}>
+        <Typography variant='h6' className={classes.label}>
           <Palette /><br/>UNDER<br/>CONSTRUCTION
         </Typography>
       </div>

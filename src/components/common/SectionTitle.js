@@ -6,7 +6,7 @@ import Colors from '../../styles/colors'
 const SectionTitle = ({ classes, children }) =>
   <Typography
     className={classes.title}
-    variant='title'
+    variant='h6'
   >
     {children}
   </Typography>

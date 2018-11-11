@@ -13,7 +13,7 @@ const Headshot = ({ classes }) =>
       src={myPhoto}
     />
     <div className={classes.title}>
-      <Typography className={classes.titleLine} variant='title'>
+      <Typography className={classes.titleLine} variant='h6'>
         Kevin Brewer
       </Typography>
       <Typography className={classes.titleLine} variant='body1'>
