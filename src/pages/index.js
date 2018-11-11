@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import withRoot from '../utils/withRoot'
-import Layout from '../components/Layout'
-import Header from '../components/home/Header'
-import AboutMe from '../components/home/AboutMe'
-import Projects from '../components/home/Projects'
-import OpenSource from '../components/home/OpenSource'
+import withRoot from 'Utils/withRoot'
+import Layout from 'Components/Layout'
+import Header from 'Components/home/Header'
+import AboutMe from 'Components/home/AboutMe'
+import Projects from 'Components/home/Projects'
+import OpenSource from 'Components/home/OpenSource'
 
 const IndexPage = ({
   data: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Classes from '../../styles/classes'
-import Colors from '../../styles/colors'
+import Classes from 'Styles/classes'
+import Colors from 'Styles/colors'
 import Typography from '@material-ui/core/Typography'
 
 const NotFoundMessage = ({ classes }) =>

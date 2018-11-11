@@ -2,7 +2,7 @@ import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import { Link as GatsbyLink } from 'gatsby'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Colors from '../../../styles/colors'
+import Colors from 'Styles/colors'
 import Typography from '@material-ui/core/Typography'
 
 const NavLink = ({

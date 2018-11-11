@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
-import Colors from '../../styles/colors'
+import Colors from 'Styles/colors'
 import Typography from '@material-ui/core/Typography'
 
 const ButtonLink = ({ classes, children, to }) =>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Colors from '../../styles/colors'
-import Classes from '../../styles/classes'
+import Colors from 'Styles/colors'
+import Classes from 'Styles/classes'
 import SocialLink from './SocialLink'
 
 const Footer = ({ classes }) =>

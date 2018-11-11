@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './Nav'
-import TitleBar from '../../common/TitleBar'
+import TitleBar from 'Common/TitleBar'
 
 const Header = () =>
   <div>

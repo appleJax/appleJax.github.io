@@ -1,9 +1,9 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Classes from '../../styles/classes'
-import Colors from '../../styles/colors'
-import Spacer from '../common/Spacer'
-import Footer from '../common/Footer'
+import Classes from 'Styles/classes'
+import Colors from 'Styles/colors'
+import Spacer from 'Common/Spacer'
+import Footer from 'Common/Footer'
 
 const Body = ({ children, classes }) => (
   <div className={classes.container}>

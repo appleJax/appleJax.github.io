@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-import Colors from '../../styles/colors'
+import Colors from 'Styles/colors'
 
 const SectionTitle = ({ classes, children }) =>
   <Typography

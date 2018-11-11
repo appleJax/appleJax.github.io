@@ -1,8 +1,8 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Colors from '../../styles/colors'
-import SocialNav from '../common/SocialNav'
-import TitleBar from '../common/TitleBar'
+import Colors from 'Styles/colors'
+import SocialNav from 'Common/SocialNav'
+import TitleBar from 'Common/TitleBar'
 
 const NotFoundHeader = ({ classes }) =>
   <div>

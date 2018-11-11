@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { withStyles } from '@material-ui/core/styles'
-import Colors from '../../styles/colors'
+import Colors from 'Styles/colors'
 
 const SocialLink = ({ classes, title, footer, className = '', children, to }) =>
   <a

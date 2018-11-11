@@ -1,6 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Classes from '../../styles/classes'
+import Classes from 'Styles/classes'
 import SocialLink from './SocialLink'
 
 const SocialNav = ({ classes }) =>

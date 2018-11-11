@@ -1,8 +1,8 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
-import Classes from '../../styles/classes'
-import Colors from '../../styles/colors'
+import Classes from 'Styles/classes'
+import Colors from 'Styles/colors'
 
 const HandWave = () =>
   <span role='img' aria-label='hand-wave'>👋</span>

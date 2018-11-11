@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import Headshot from './Headshot'
 import KataLinks from './KataLinks'
-import Classes from '../../../styles/classes'
+import Classes from 'Styles/classes'
 
 const TitleBar = ({ classes, className }) =>
   <div className={classNames(className, classes.container)}>

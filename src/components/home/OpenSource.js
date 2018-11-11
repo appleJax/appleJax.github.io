@@ -1,10 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { withStyles } from '@material-ui/core/styles'
-import Classes from '../../styles/classes'
-import SectionTitle from '../common/SectionTitle'
-import ScreenShot from '../common/ScreenShot'
-import { slugify } from '../../utils'
+import Classes from 'Styles/classes'
+import SectionTitle from 'Common/SectionTitle'
+import ScreenShot from 'Common/ScreenShot'
+import { slugify } from 'Utils'
 
 const OpenSource = ({ classes, repos, screenshots }) => {
   const images = screenshots.edges.reduce(( obj, edge) => ({

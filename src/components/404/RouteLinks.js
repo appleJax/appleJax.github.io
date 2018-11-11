@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
-import Classes from '../../styles/classes'
-import ButtonLink from '../common/ButtonLink'
+import Classes from 'Styles/classes'
+import ButtonLink from 'Common/ButtonLink'
 
 const RouteLinks = ({ classes }) =>
   <div className={classes.container}>

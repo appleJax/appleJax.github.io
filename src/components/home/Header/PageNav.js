@@ -1,7 +1,7 @@
 import React from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import NavLink from './NavLink'
-import Classes from '../../../styles/classes'
+import Classes from 'Styles/classes'
 
 const PageNav = ({ activeTab, classes, scrollOffset }) => {
   const Link = ({ active, icon, scrollOffset, text, to }) =>
