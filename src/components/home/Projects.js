@@ -39,7 +39,7 @@ const styles = (theme) => ({
   projectsContainer: {
     ...Classes.flexRow,
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     width: '100%'
   }
 })

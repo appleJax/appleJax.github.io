@@ -39,7 +39,7 @@ const styles = (theme) => ({
   osContainer: {
     ...Classes.flexRow,
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     width: '100%'
   }
 })
