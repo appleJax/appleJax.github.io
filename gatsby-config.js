@@ -28,11 +28,11 @@ module.exports = {
       projects: [
         {
           header: {
-            name: 'Gamegogakuen',
+            name: 'GameGogakuen',
             description: 'Twitter Quiz Bot'
           },
           image: {
-            alt: 'Gamegogakuen Screenshot'
+            alt: 'GameGogakuen Screenshot'
           },
           links: {
             live: 'https://game-gogakuen.appspot.com',
@@ -50,6 +50,19 @@ module.exports = {
           links: {
             live: 'https://pawn-shopify.netlify.com',
             github: 'https://github.com/applejax/pawn-shopify'
+          }
+        },
+        {
+          header: {
+            name: 'GameGogakuen Discord',
+            description: 'Discord Quiz Bot'
+          },
+          image: {
+            alt: 'GG Discord Screenshot'
+          },
+          links: {
+            live: 'https://discord.gg/NXSgjT8',
+            github: 'https://github.com/applejax/gg-discord'
           }
         },
         {
