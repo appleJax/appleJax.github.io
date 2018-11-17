@@ -30,7 +30,7 @@ const styles = (theme) => ({
     transform: 'rotate(-45deg)'
   },
   label: {
-    fontSize: '2.1em',
+    fontSize: '1.9em',
     marginTop: '-70px',
     textAlign: 'center'
   },

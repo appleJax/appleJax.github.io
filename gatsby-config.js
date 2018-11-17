@@ -74,7 +74,7 @@ module.exports = {
             alt: 'the Jam Screenshot'
           },
           links: {
-            live: 'https://the-jam.herokuapp.com',
+            live: 'https://thejam.herokuapp.com',
             github: 'https://github.com/applejax/thejam'
           }
         },
