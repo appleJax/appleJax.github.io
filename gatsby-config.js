@@ -74,7 +74,7 @@ module.exports = {
             alt: 'the Jam Screenshot'
           },
           links: {
-            live: 'https://thejam.herokuapp.com',
+            live: 'https://thejam-recipes.herokuapp.com',
             github: 'https://github.com/applejax/thejam'
           }
         },
@@ -87,7 +87,7 @@ module.exports = {
             alt: 'Mac Rentals, Inc. Screenshot'
           },
           links: {
-            live: 'https://macrentalsinc.herokuapp.com',
+            live: 'https://macrentals-inc.herokuapp.com',
             github: 'https://github.com/applejax/mri'
           }
         }
