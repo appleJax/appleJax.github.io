@@ -4,6 +4,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Body from './Body'
 
+import AppleTouchIcon from 'Images/favicon/apple-touch-icon.png'
+import Favicon16 from 'Images/favicon/favicon-16x16.png'
+import Favicon32 from 'Images/favicon/favicon-32x32.png'
+import SafariPinnedTab from 'Images/favicon/safari-pinned-tab.svg'
+
 const Layout = ({ children }) => {
   const Content = ({ site }) => 
     <>
@@ -18,15 +23,37 @@ const Layout = ({ children }) => {
           { property: 'og:image:type', content: 'image/png' },
           { name: 'description', content: site.description },
           { name: 'keywords', content: site.keywords },
+          { name: 'msapplication-TileColor', content: '#201407' }
         ]}
         link={[
           {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500'
+            rel: "apple-touch-icon",
+            sizes: "180x180",
+            href: AppleTouchIcon,
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: Favicon32,
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: Favicon16,
+          },
+          {
+            rel: 'mask-icon',
+            href: SafariPinnedTab,
           },
           {
             rel: 'stylesheet',
-            href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.brwLog`
+            href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500',
+          },
+          {
+            rel: 'stylesheet',
+            href: `https://fonts.googleapis.com/css?family=Carter+One&text=Hi,I'mKevn.brwLog`,
           },
           {
             rel: 'stylesheet',
