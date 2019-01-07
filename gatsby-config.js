@@ -35,7 +35,7 @@ module.exports = {
             alt: 'GameGogakuen Screenshot'
           },
           links: {
-            live: 'https://game-gogakuen.appspot.com',
+            live: 'https://game-gogakuen.herokuapp.com',
             github: 'https://github.com/applejax/GG-JP'
           }
         },
