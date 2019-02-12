@@ -7,7 +7,7 @@ import SocialLink from './SocialLink'
 const Footer = ({ classes }) =>
   <div className={classes.container}>
     <p className={classes.copyright}>
-      © 2018 - Kevin Brewer -
+      © 2019 - Kevin Brewer -
     </p>
     <SocialLink
       to='https://github.com/appleJax'
