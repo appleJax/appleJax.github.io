@@ -54,7 +54,7 @@ function Screenshot({ info, classes }) {
         <LinkOverlay links={info.links} />
       </div>
     </div>
-  ) 
+  )
 }
 
 const styles = (theme) => ({
@@ -84,14 +84,19 @@ const styles = (theme) => ({
     width: '500px'
   },
   link: {
+    alignItems: 'center',
     color: Colors.secondary.white,
+    display: 'flex',
     font: 'bold 2em Roboto, sans-serif',
-    margin: '0 20px',
+    height: '100%',
+    justifyContent: 'center',
     textDecoration: 'none',
     transition: '0.2s',
-    '&:hover': {
-      borderBottom: `4px solid ${Colors.secondary.white}`,
-      textShadow: `0 10px 20px rgba(255, 255, 255, 0.3)`,
+    width: '100%',
+    '&:hover, &:focus': {
+      background: 'rgba(255, 255, 255, 0.3)',
+      boxShadow: `0 0 30px rgba(0, 0, 0, 0.5) inset`,
+      textShadow: `0 5px 10px rgba(0, 0, 0, 0.8)`,
       transition: '0.2s'
     },
     [theme.breakpoints.down('xs')]: {
