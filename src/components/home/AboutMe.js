@@ -68,7 +68,7 @@ const styles = (theme) => ({
     padding: '10px 20px',
     textDecoration: 'none',
     textShadow: `1px 1px ${Colors.secondary.main}`,
-    '&:hover': {
+    '&:hover, &:focus': {
       opacity: '0.9'
     }
   },

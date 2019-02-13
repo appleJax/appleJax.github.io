@@ -24,7 +24,7 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
     padding: '0 8px',
     textDecoration: 'none',
-    '&:hover': {
+    '&:hover, &:focus': {
       color: theme.palette.primary.light,
       '& svg, g, path': {
         fill: theme.palette.primary.light
