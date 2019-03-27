@@ -7,7 +7,7 @@ import ScreenShot from 'Common/ScreenShot'
 import { slugify } from 'Utils'
 
 const OpenSource = ({ classes, repos, screenshots }) => {
-  const images = screenshots.edges.reduce(( obj, edge) => ({
+  const images = screenshots.edges.reduce((obj, edge) => ({
     ...obj,
    [edge.node.relativePath.replace(/\..+$/, '')]: edge.node.childImageSharp.fluid
   }), {})
@@ -55,6 +55,7 @@ export const query = graphql`
         alt
       }
       links {
+        live
         github
       }
     }

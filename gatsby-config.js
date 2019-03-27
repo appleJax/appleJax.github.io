@@ -95,6 +95,31 @@ module.exports = {
       openSource: [
         {
           header: {
+            name: 'GatsbyJS',
+            description: 'React Static Site Generator'
+          },
+          image: {
+            alt: 'GatsbyJS README.md'
+          },
+          links: {
+            github: 'https://github.com/gatsbyjs/gatsby'
+          }
+        },
+        {
+          header: {
+            name: 'San Diego Tech Hub',
+            description: 'Tech Community Advocacy'
+          },
+          image: {
+            alt: 'San Diego Tech Hub Screenshot'
+          },
+          links: {
+            live: 'https://www.sandiegotechhub.com',
+            github: 'https://github.com/san-diego-tech-hub/sdth-site'
+          }
+        },
+        {
+          header: {
             name: 'JavaScript Algorithms and Data Structures',
             description: 'Educational Code Samples'
           },
