@@ -165,6 +165,19 @@ module.exports = {
           links: {
             github: 'https://github.com/WikiEducationFoundation/WikiEduDashboard'
           }
+        },
+        {
+          header: {
+            name: 'Open San Diego',
+            description: 'SD Branch of Code For America'
+          },
+          image: {
+            alt: 'Open San Diego Screenshot'
+          },
+          links: {
+            live: 'https://opensandiego.org/',
+            github: 'https://github.com/opensandiego/opensandiego.github.io'
+          }
         }
       ]
     }
