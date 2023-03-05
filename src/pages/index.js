@@ -27,48 +27,40 @@ const IndexPage = ({
   </>
 );
 
-export const query = graphql`
-  query HomePageQuery {
-    site {
-      siteMetadata {
-        section {
-          ...ProjectsFragment
-          ...OpenSourceFragment
-        }
+export const query = graphql`query HomePageQuery {
+  site {
+    siteMetadata {
+      section {
+        ...ProjectsFragment
+        ...OpenSourceFragment
       }
     }
-    projectImages: allFile(
-      filter: { sourceInstanceName: { eq: "projectImages" } }
-    ) {
-      edges {
-        node {
-          absolutePath
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    openSourceImages: allFile(
-      filter: { sourceInstanceName: { eq: "openSourceImages" } }
-    ) {
-      edges {
-        node {
-          absolutePath
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+  }
+  projectImages: allFile(filter: {sourceInstanceName: {eq: "projectImages"}}) {
+    edges {
+      node {
+        absolutePath
+        relativePath
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
     }
   }
-`;
+  openSourceImages: allFile(
+    filter: {sourceInstanceName: {eq: "openSourceImages"}}
+  ) {
+    edges {
+      node {
+        absolutePath
+        relativePath
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
+        }
+      }
+    }
+  }
+}`;
 
 export { Head } from "Components/Layout/Head";
 
