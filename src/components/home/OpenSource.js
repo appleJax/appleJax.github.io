@@ -37,7 +37,7 @@ const OpenSource = ({ classes, repos, screenshots }) => {
   )
 }
 
-const styles = theme => ({
+const styles = () => ({
   osContainer: {
     ...Classes.flexRow,
     flexWrap: 'wrap',

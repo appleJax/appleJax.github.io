@@ -1,184 +1,209 @@
-const path = require(`path`)
+const path = require("path");
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `projectImages`,
-        path: path.join(__dirname, `src`, `images`, `projects`),
-      }
+        name: "projectImages",
+        path: path.join(__dirname, "src", "images", "projects"),
+      },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `openSourceImages`,
-        path: path.join(__dirname, `src`, `images`, `open-source`),
-      }
-    }
+        name: "openSourceImages",
+        path: path.join(__dirname, "src", "images", "open-source"),
+      },
+    },
   ],
   siteMetadata: {
-    title: 'Kevin Brewer - Software Engineer',
+    title: "Kevin Brewer - Software Engineer",
     description: "Kevin Brewer's portfolio website",
-    keywords: 'javascript, programming, software, blog, open source',
+    keywords: "javascript, programming, software, blog, open source",
     section: {
       projects: [
         {
           header: {
-            name: 'GameGogakuen',
-            description: 'Twitter Quiz Bot'
+            name: "GameGogakuen",
+            description: "Twitter Quiz Bot",
           },
           image: {
-            alt: 'GameGogakuen Screenshot'
+            alt: "GameGogakuen Screenshot",
           },
           links: {
-            live: 'https://game-gogakuen.herokuapp.com',
-            github: 'https://github.com/applejax/GG-JP'
-          }
+            live: "https://game-gogakuen.herokuapp.com",
+            github: "https://github.com/applejax/GG-JP",
+          },
         },
         {
           header: {
-            name: 'Pawn Shopify',
-            description: 'Marketplace for Used Goods'
+            name: "Pawn Shopify",
+            description: "Marketplace for Used Goods",
           },
           image: {
-            alt: 'Pawn Shopify Screenshot'
+            alt: "Pawn Shopify Screenshot",
           },
           links: {
-            live: 'https://pawn-shopify.netlify.com',
-            github: 'https://github.com/applejax/pawn-shopify'
-          }
+            live: "https://pawn-shopify.netlify.com",
+            github: "https://github.com/applejax/pawn-shopify",
+          },
         },
         {
           header: {
-            name: 'GameGogakuen Discord',
-            description: 'Discord Quiz Bot'
+            name: "GameGogakuen Discord",
+            description: "Discord Quiz Bot",
           },
           image: {
-            alt: 'GG Discord Screenshot'
+            alt: "GG Discord Screenshot",
           },
           links: {
-            live: 'https://discord.gg/NXSgjT8',
-            github: 'https://github.com/applejax/gg-discord'
-          }
+            live: "https://discord.gg/NXSgjT8",
+            github: "https://github.com/applejax/gg-discord",
+          },
         },
         {
           header: {
-            name: 'The Jam',
-            description: 'Recipe Archive'
+            name: "The Jam",
+            description: "Recipe Archive",
           },
           image: {
-            alt: 'the Jam Screenshot'
+            alt: "the Jam Screenshot",
           },
           links: {
-            live: 'https://thejam-recipes.herokuapp.com',
-            github: 'https://github.com/applejax/thejam'
-          }
+            live: "https://thejam-recipes.herokuapp.com",
+            github: "https://github.com/applejax/thejam",
+          },
         },
         {
           header: {
-            name: 'Mac Rentals, Inc.',
-            description: 'Technology Rental Company'
+            name: "Mac Rentals, Inc.",
+            description: "Technology Rental Company",
           },
           image: {
-            alt: 'Mac Rentals, Inc. Screenshot'
+            alt: "Mac Rentals, Inc. Screenshot",
           },
           links: {
-            live: 'https://macrentals-inc.herokuapp.com',
-            github: 'https://github.com/applejax/mri'
-          }
-        }
+            live: "https://macrentals-inc.herokuapp.com",
+            github: "https://github.com/applejax/mri",
+          },
+        },
       ],
       openSource: [
         {
           header: {
-            name: 'GatsbyJS',
-            description: 'React Static Site Generator'
+            name: "Nx",
+            description: "Next-gen build system with monorepo support",
           },
           image: {
-            alt: 'GatsbyJS README.md'
+            alt: "Nx README.md",
           },
           links: {
-            github: 'https://github.com/gatsbyjs/gatsby'
-          }
+            github: "https://github.com/nrwl/nx",
+          },
         },
         {
           header: {
-            name: 'San Diego Tech Hub',
-            description: 'Tech Community Advocacy'
+            name: "The Rust Book",
+            description: "The Official Rust Language Reference",
           },
           image: {
-            alt: 'San Diego Tech Hub Screenshot'
+            alt: "The Rust Book README.md",
           },
           links: {
-            live: 'https://www.sandiegotechhub.com',
-            github: 'https://github.com/san-diego-tech-hub/sdth-site'
-          }
+            github: "https://github.com/rust-lang/book",
+          },
         },
         {
           header: {
-            name: 'JavaScript Algorithms and Data Structures',
-            description: 'Educational Code Samples'
+            name: "GatsbyJS",
+            description: "React Static Site Generator",
           },
           image: {
-            alt: 'JS Algos and Data Structures README.md'
+            alt: "GatsbyJS README.md",
           },
           links: {
-            github: 'https://github.com/trekhleb/javascript-algorithms'
-          }
+            github: "https://github.com/gatsbyjs/gatsby",
+          },
         },
         {
           header: {
-            name: 'Discord.js Guide',
-            description: 'Getting Started Guide for Discord.js'
+            name: "San Diego Tech Hub",
+            description: "Tech Community Advocacy",
           },
           image: {
-            alt: 'Discord.js Guide README.md'
+            alt: "San Diego Tech Hub Screenshot",
           },
           links: {
-            github: 'https://github.com/discordjs/guide'
-          }
+            live: "https://www.sandiegotechhub.com",
+            github: "https://github.com/san-diego-tech-hub/sdth-site",
+          },
         },
         {
           header: {
-            name: 'Code Corps',
-            description: 'Software Platform for Social Welfare'
+            name: "JavaScript Algorithms and Data Structures",
+            description: "Educational Code Samples",
           },
           image: {
-            alt: 'Code Corps README.md'
+            alt: "JS Algos and Data Structures README.md",
           },
           links: {
-            github: 'https://github.com/code-corps/code-corps-ember'
-          }
+            github: "https://github.com/trekhleb/javascript-algorithms",
+          },
         },
         {
           header: {
-            name: 'Wiki Education Dashboard',
-            description: 'Wikimedia Education Software'
+            name: "Discord.js Guide",
+            description: "Getting Started Guide for Discord.js",
           },
           image: {
-            alt: 'Wiki Edu Dashboard README.md'
+            alt: "Discord.js Guide README.md",
           },
           links: {
-            github: 'https://github.com/WikiEducationFoundation/WikiEduDashboard'
-          }
+            github: "https://github.com/discordjs/guide",
+          },
         },
         {
           header: {
-            name: 'Open San Diego',
-            description: 'SD Branch of Code For America'
+            name: "Code Corps",
+            description: "Software Platform for Social Welfare",
           },
           image: {
-            alt: 'Open San Diego Screenshot'
+            alt: "Code Corps README.md",
           },
           links: {
-            live: 'https://opensandiego.org/',
-            github: 'https://github.com/opensandiego/opensandiego.github.io'
-          }
-        }
-      ]
-    }
-  }
-}
+            github: "https://github.com/code-corps/code-corps-ember",
+          },
+        },
+        {
+          header: {
+            name: "Wiki Education Dashboard",
+            description: "Wikimedia Education Software",
+          },
+          image: {
+            alt: "Wiki Edu Dashboard README.md",
+          },
+          links: {
+            github:
+              "https://github.com/WikiEducationFoundation/WikiEduDashboard",
+          },
+        },
+        {
+          header: {
+            name: "Open San Diego",
+            description: "SD Branch of Code For America",
+          },
+          image: {
+            alt: "Open San Diego Screenshot",
+          },
+          links: {
+            live: "https://opensandiego.org/",
+            github: "https://github.com/opensandiego/opensandiego.github.io",
+          },
+        },
+      ],
+    },
+  },
+};

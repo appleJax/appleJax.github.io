@@ -70,6 +70,6 @@ export const query = graphql`
   }
 `;
 
-export { Head } from "../components/Layout/Head";
+export { Head } from "Components/Layout/Head";
 
 export default withRoot(IndexPage);
