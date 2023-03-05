@@ -7,45 +7,47 @@ import ScreenShot from 'Common/ScreenShot'
 import { slugify } from 'Utils'
 
 const Projects = ({ classes, projects, screenshots }) => {
-  const images = screenshots.edges.reduce(( obj, edge) => ({
-    ...obj,
-   [edge.node.relativePath.replace(/\..+$/, '')]: edge.node.childImageSharp.fluid
-  }), {})
+  const images = screenshots.edges.reduce(
+    (obj, edge) => ({
+      ...obj,
+      [edge.node.relativePath.replace(/\..+$/, '')]: edge.node.childImageSharp
+        .fluid,
+    }),
+    {}
+  )
 
   const projectInfo = projects.map(project => ({
     ...project,
     image: {
       ...project.image,
-      fluid: images[slugify(project.header.name)]
-    }
+      fluid: images[slugify(project.header.name)],
+    },
   }))
 
   return (
-  <>
-    <div id='projects'></div>
-    <SectionTitle>Projects</SectionTitle>
-    <div className={classes.projectsContainer}>
-    {
-      projectInfo.map(
-        (project, i) => <ScreenShot key={i} info={project} />
-      )
-    }
-    </div>
-  </>
+    <>
+      <div id="projects" />
+      <SectionTitle>Projects</SectionTitle>
+      <div className={classes.projectsContainer}>
+        {projectInfo.map((project, i) => (
+          <ScreenShot key={i} info={project} />
+        ))}
+      </div>
+    </>
   )
 }
 
-const styles = (theme) => ({
+const styles = theme => ({
   projectsContainer: {
     ...Classes.flexRow,
     flexWrap: 'wrap',
     justifyContent: 'center',
-    width: '100%'
-  }
+    width: '100%',
+  },
 })
 
 export const query = graphql`
-  fragment ProjectsFragment on section_2 {
+  fragment ProjectsFragment on SiteSiteMetadataSection {
     projects {
       header {
         name

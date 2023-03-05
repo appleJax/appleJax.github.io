@@ -1,9 +1,9 @@
-import React from 'react'
-import withRoot from '../utils/withRoot'
-import Layout from 'Components/Layout'
-import NotFoundHeader from 'Components/404/NotFoundHeader'
-import NotFoundMessage from 'Components/404/NotFoundMessage'
-import RouteLinks from 'Components/404/RouteLinks'
+import React from "react";
+import withRoot from "../utils/withRoot";
+import Layout from "Components/Layout";
+import NotFoundHeader from "Components/404/NotFoundHeader";
+import NotFoundMessage from "Components/404/NotFoundMessage";
+import RouteLinks from "Components/404/RouteLinks";
 
 const NotFoundPage = () => (
   <Layout>
@@ -11,6 +11,8 @@ const NotFoundPage = () => (
     <NotFoundMessage />
     <RouteLinks />
   </Layout>
-)
+);
 
-export default withRoot(NotFoundPage)
+// export { Head } from "Components/Layout/Head";
+
+export default withRoot(NotFoundPage);

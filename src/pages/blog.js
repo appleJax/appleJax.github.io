@@ -1,17 +1,18 @@
-import React from 'react'
-import withRoot from 'Utils/withRoot'
-import Layout from 'Components/Layout'
-import BlogHeader from 'Components/blog/BlogHeader'
-import UnderConstruction from 'Components/blog/UnderConstruction'
-import ButtonLink from 'Components/common/ButtonLink'
+import React from "react";
+import withRoot from "Utils/withRoot";
+import Layout from "Components/Layout";
+import BlogHeader from "Components/blog/BlogHeader";
+import UnderConstruction from "Components/blog/UnderConstruction";
+import ButtonLink from "Components/common/ButtonLink";
 
-const BlogPage = () =>
+const BlogPage = () => (
   <Layout>
     <BlogHeader />
     <UnderConstruction />
-    <ButtonLink to='/'>
-      Home
-    </ButtonLink>
+    <ButtonLink to="/">Home</ButtonLink>
   </Layout>
+);
 
-export default withRoot(BlogPage)
+// export { Head } from "Components/Layout/Head";
+
+export default withRoot(BlogPage);

@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default () => <div style={{ flexGrow: 100 }} />
+const Spacer = () => <div style={{ flexGrow: 100 }} />
+
+export default Spacer

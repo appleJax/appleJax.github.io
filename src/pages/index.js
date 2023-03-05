@@ -1,25 +1,23 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import withRoot from 'Utils/withRoot'
-import Layout from 'Components/Layout'
-import Header from 'Components/home/Header'
-import AboutMe from 'Components/home/AboutMe'
-import Projects from 'Components/home/Projects'
-import OpenSource from 'Components/home/OpenSource'
+import React from "react";
+import { graphql } from "gatsby";
+import withRoot from "Utils/withRoot";
+import Layout from "Components/layout";
+import Header from "Components/home/Header";
+import AboutMe from "Components/home/AboutMe";
+import Projects from "Components/home/Projects";
+import OpenSource from "Components/home/OpenSource";
 
 const IndexPage = ({
   data: {
     site: {
-      siteMetadata: {
-        section
-      }
+      siteMetadata: { section },
     },
     projectImages,
-    openSourceImages
-  }
+    openSourceImages,
+  },
 }) => (
   <>
-    <div id='top' />
+    <div id="top" />
     <Layout>
       <Header />
       <AboutMe />
@@ -27,7 +25,7 @@ const IndexPage = ({
       <OpenSource screenshots={openSourceImages} repos={section.openSource} />
     </Layout>
   </>
-)
+);
 
 export const query = graphql`
   query HomePageQuery {
@@ -39,7 +37,9 @@ export const query = graphql`
         }
       }
     }
-    projectImages: allFile(filter: { sourceInstanceName: { eq: "projectImages" } }) {
+    projectImages: allFile(
+      filter: { sourceInstanceName: { eq: "projectImages" } }
+    ) {
       edges {
         node {
           absolutePath
@@ -52,7 +52,9 @@ export const query = graphql`
         }
       }
     }
-    openSourceImages: allFile(filter: { sourceInstanceName: { eq: "openSourceImages" } }) {
+    openSourceImages: allFile(
+      filter: { sourceInstanceName: { eq: "openSourceImages" } }
+    ) {
       edges {
         node {
           absolutePath
@@ -66,6 +68,8 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default withRoot(IndexPage)
+export { Head } from "../components/Layout/Head";
+
+export default withRoot(IndexPage);

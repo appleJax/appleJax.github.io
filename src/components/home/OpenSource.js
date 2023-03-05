@@ -7,45 +7,47 @@ import ScreenShot from 'Common/ScreenShot'
 import { slugify } from 'Utils'
 
 const OpenSource = ({ classes, repos, screenshots }) => {
-  const images = screenshots.edges.reduce((obj, edge) => ({
-    ...obj,
-   [edge.node.relativePath.replace(/\..+$/, '')]: edge.node.childImageSharp.fluid
-  }), {})
+  const images = screenshots.edges.reduce(
+    (obj, edge) => ({
+      ...obj,
+      [edge.node.relativePath.replace(/\..+$/, '')]: edge.node.childImageSharp
+        .fluid,
+    }),
+    {}
+  )
 
   const repoInfo = repos.map(repo => ({
     ...repo,
     image: {
       ...repo.image,
-      fluid: images[slugify(repo.header.name)]
-    }
+      fluid: images[slugify(repo.header.name)],
+    },
   }))
 
   return (
-  <>
-    <div id='open-source'></div>
-    <SectionTitle>Open Source</SectionTitle>
-    <div className={classes.osContainer}>
-    {
-      repoInfo.map(
-        (repo, i) => <ScreenShot key={i} info={repo} />
-      )
-    }
-    </div>
-  </>
+    <>
+      <div id="open-source" />
+      <SectionTitle>Open Source</SectionTitle>
+      <div className={classes.osContainer}>
+        {repoInfo.map((repo, i) => (
+          <ScreenShot key={i} info={repo} />
+        ))}
+      </div>
+    </>
   )
 }
 
-const styles = (theme) => ({
+const styles = theme => ({
   osContainer: {
     ...Classes.flexRow,
     flexWrap: 'wrap',
     justifyContent: 'center',
-    width: '100%'
-  }
+    width: '100%',
+  },
 })
 
 export const query = graphql`
-  fragment OpenSourceFragment on section_2 {
+  fragment OpenSourceFragment on SiteSiteMetadataSection {
     openSource {
       header {
         name

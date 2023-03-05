@@ -42,7 +42,7 @@ function Screenshot({ info, classes }) {
       </Link>
     }
       <Link href={links.github}>
-        Github
+        GitHub
       </Link>
     </div>
 
