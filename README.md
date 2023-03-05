@@ -4,7 +4,7 @@
 
 ## SUMMARY
 
-> A forward-thinking and goal-oriented software engineer with a demonstrated history of success in building infrastructure tooling, automating code quality and consistency, modernizing tech stacks, streamlining workflows, automating processes, and front-end development. Fosters culture of collaboration, knowledge sharing, and teamwork to encourage proactive communication, continual innovation, and achievement. Proven aptitude for simplifying technical solutions to minimize points of failure and establish maintainable, extensible architecture.
+A forward-thinking and goal-oriented software engineer with a demonstrated history of success in building infrastructure tooling, automating code quality and consistency, modernizing tech stacks, streamlining workflows, automating processes, and front-end development. Fosters culture of collaboration, knowledge sharing, and teamwork to encourage proactive communication, continual innovation, and achievement. Proven aptitude for simplifying technical solutions to minimize points of failure and establish maintainable, extensible architecture.
 
 
 ### TECHNICAL SKILLS
@@ -70,7 +70,7 @@ TypeScript, React, Redux, NextJS, TanStack Query, GraphQL, Material UI, Node, Ex
 
 ### BERKLEE COLLEGE OF MUSIC, Boston, Massachusetts
 
-**B.A., Music Production and Engineering**
+B.A., Music Production and Engineering
 
 ## COURSES / CERTIFICATIONS
 
