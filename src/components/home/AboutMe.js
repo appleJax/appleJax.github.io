@@ -19,22 +19,19 @@ const AboutMe = ({ classes }) => (
       <div className={classes.descriptionBg}>
         <p>
           I'm a software engineering tech lead with a demonstrated track record
-          of shipping large complex projects in a fast-paced high-pressure
+          of shipping complex projects in a fast-paced, high-pressure
           environment.
         </p>
         <p>
-          Experienced building infrastructure tooling, automating code quality
-          and consistency, modernizing tech stacks, streamlining workflows,
-          automating processes, and full stack development.
+          Experienced building infrastructure tooling, automating code
+          quality/consistency, modernizing tech stacks, automating processes,
+          and full stack development.
         </p>
         <p>
-          I foster a culture of collaboration, knowledge sharing, and teamwork
-          to encourage proactive communication, continual innovation, and
-          impact.
-        </p>
-        <p>
-          Proven aptitude for simplifying technical solutions to minimize points
-          of failure and establish maintainable, extensible architecture.
+          Fosters culture of collaboration and knowledge sharing, stimulating
+          proactive communication, continual innovation, and impact. Proven
+          aptitude for simplifying technical solutions to minimize points of
+          failure and establish maintainable, extensible architecture.
         </p>
       </div>
       <a
