@@ -18,14 +18,12 @@ TypeScript, React, Redux, NextJS, TanStack Query, GraphQL, Material UI, Node, Ex
 
 - Owned customer journey from order placement through order fulfillment, serving 5M customers daily, including adding/editing/removing items, changing reservations for scheduled orders, updating payment methods, changing delivery address, designating alternate pickup person, and updating delivery instructions.
 - Led front-end team and implemented features resulting in $1.4 million increased GMV and 9 basis-points decreased cost-per-order due to reduced customer support calls. Projects included personalized substitutions, 1-click add-to-order, out-of-stock recommendations, and save-for-later.
-- Mentored teammates resulting in two promotions and one contractor converting to payroll.
+- Mentored teammates resulting in two promotions and one contractor converting to FTE.
 - Led monitoring and alerting effort to drive down API error rates below 0.4%. Implemented monitoring dashboards and alerts in Splunk and Graphana.
 - Owned content management repositories for both web and mobile. Wrote onboarding docs, established code-ownership model, CI checks, merge queue, and collaborator permissions.
 - Updated onboarding code labs and documentation to improve experience for new developers.
 - Ported custom babel plugins to Rust to facilitate upgrading to SWC and improve compilation speed 15x.
 - Developed tooling for internationalization, enabling multiple markets to onboard to monorepo.
-
-### Walmart, Carlsbad, California
 
 **Senior Software Engineer, 2019-2021**
 
@@ -68,8 +66,6 @@ TypeScript, React, Redux, NextJS, TanStack Query, GraphQL, Material UI, Node, Ex
 - Decreased processing time for new inventory by 6x through automating spec verification and barcode creation.
 - Implemented prototype quoting software with Ember.js, allowing customers to place orders online, eliminating need for phone operators.
 - Negotiated change from hourly to salary compensation for all AV/IT Technicians, shifting incentive structure to reward efficiency.
-
-### Mac Rentals, Inc., San Diego, California
 
 **Audio Visual Technician, 2010-2013**
 
