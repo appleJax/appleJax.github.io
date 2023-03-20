@@ -23,7 +23,7 @@ module.exports = {
   siteMetadata: {
     title: "Kevin Brewer - Software Engineer",
     description: "Kevin Brewer's portfolio website",
-    keywords: "javascript, programming, software, blog, open source",
+    keywords: "javascript, programming, software, open source",
     section: {
       projects: [
         {

@@ -1,24 +1,20 @@
-import React from 'react'
-import { withStyles } from '@material-ui/core/styles'
-import Classes from 'Styles/classes'
-import ButtonLink from 'Common/ButtonLink'
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import Classes from "Styles/classes";
+import ButtonLink from "Common/ButtonLink";
 
-const RouteLinks = ({ classes }) =>
+const RouteLinks = ({ classes }) => (
   <div className={classes.container}>
-    <ButtonLink to='/'>
-      Home
-    </ButtonLink>
-    <ButtonLink to='/blog'>
-      Blog
-    </ButtonLink>
+    <ButtonLink to="/">Home</ButtonLink>
   </div>
+);
 
 const styles = (theme) => ({
   container: {
     ...Classes.flexRow,
-    marginTop: '25px',
-    padding: '15px 0'
-  }
-})
+    marginTop: "25px",
+    padding: "15px 0",
+  },
+});
 
-export default withStyles(styles)(RouteLinks)
+export default withStyles(styles)(RouteLinks);
