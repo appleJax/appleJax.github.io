@@ -28,10 +28,11 @@ const AboutMe = ({ classes }) => (
           and full stack development.
         </p>
         <p>
-          Fosters culture of collaboration and knowledge sharing, stimulating
-          proactive communication, continual innovation, and impact. Proven
-          aptitude for simplifying technical solutions to minimize points of
-          failure and establish maintainable, extensible architecture.
+          As a tech lead, I foster a culture of collaboration and knowledge
+          sharing, encouraging proactive communication, continual innovation,
+          and impact. Proven aptitude for simplifying technical solutions to
+          minimize points of failure and establish maintainable, extensible
+          architecture.
         </p>
       </div>
       <a
